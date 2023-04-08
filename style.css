@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/*This is for the header so the logo
+and the home about galleries contact*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background-color:#2a2a2a ;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%;
+
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 8px 12px;
+    position: relative;
+}
+nav ul li a{
+    color: #d3d3d3 ;
+    text-decoration: none;
+    font-size: 14px;
+}
+nav ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #d3d3d3 ;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+ }
+ nav ul li:hover::after{
+     width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #d3d3d3 ;
+}
+p{
+    color: white;
+}
+/*This is for the about page*/
+.about{
+    width: 100%;
+    padding: 78px 0;
+    
+}
+.about img{
+    height: auto;
+    width: 420px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h1{
+    color: #a9a9a9;
+    font-size: 80px;
+    text-transform: capitalize;
+    padding-left: 100px;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color:#d3d3d3;
+    font-size: 25px;
+    text-transform: capitalize;
+    padding-left: 100px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+.about-text p{
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    padding-left: 100px;
+    margin-bottom: 45px;
+}
+.about-text h6{
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    padding-left: 100px;
+    margin-bottom: 20px;
+}
+/*This is for the galleries page*/
+.title h2{
+    color: #d3d3d3;
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 40px;
+    letter-spacing: 7px;
+}
+.photo{
+    padding-left: 150px;
+}
